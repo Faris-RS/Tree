@@ -27,3 +27,4 @@ addChild(nodeC, nodeE);
 addChild(nodeC, nodeF);
 
 console.log(root);
+// console.log(JSON.stringify(root));
