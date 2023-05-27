@@ -67,23 +67,23 @@ const ce = createTreeNode("ce");
 
 const caa = createTreeNode("cca");
 
-addChild(root, a)
-addChild(root, b)
-addChild(root, c)
+addChild(root, a);
+addChild(root, b);
+addChild(root, c);
 
-addChild(a, aa)
-addChild(a, ab)
-addChild(a, ac)
+addChild(a, aa);
+addChild(a, ab);
+addChild(a, ac);
 
-addChild(b, ba)
-addChild(b, bb)
+addChild(b, ba);
+addChild(b, bb);
 
-addChild(c, ca)
-addChild(c, cb)
-addChild(c, cc)
-addChild(c, cd)
-addChild(c, ce)
+addChild(c, ca);
+addChild(c, cb);
+addChild(c, cc);
+addChild(c, cd);
+addChild(c, ce);
 
-addChild(ca, caa)
+addChild(ca, caa);
 
 console.log(JSON.stringify(root));
