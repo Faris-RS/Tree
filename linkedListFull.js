@@ -216,8 +216,8 @@ addChild(root2, bb);
 addChild(root2, cc);
 addChild(root2, dd);
 
-// console.log(JSON.stringify(root1));
-// console.log(JSON.stringify(root2));
+console.log(JSON.stringify(root1));
+console.log(JSON.stringify(root2));
 
 // Merge trees
 const mergedTree = mergeTrees(root1, root2);
@@ -227,10 +227,10 @@ const { tree1, tree2 } = splitTree(root1, a);
 console.log(JSON.stringify(tree1));
 console.log(JSON.stringify(tree2));
 
-//   // DFS
-//   console.log("DFS:");
-//   depthFirstSearch(mergedTree);
+  // DFS
+  console.log("DFS:");
+  depthFirstSearch(mergedTree);
 
-//   // BFS
-//   console.log("BFS:");
-//   breadthFirstSearch(mergedTree);
+  // BFS
+  console.log("BFS:");
+  breadthFirstSearch(mergedTree);
