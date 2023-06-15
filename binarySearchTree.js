@@ -20,7 +20,6 @@ function findClosestValue(root, target) {
 
   while (root !== null) {
     const currentDifference = Math.abs(root.value - target);
-    // const currentDifference = (root.value - target);
 
     if (currentDifference < minDifference) {
       minDifference = currentDifference;
@@ -59,6 +58,39 @@ function validateBST(node, min, max) {
   return isLeftSubtreeValid && isRightSubtreeValid;
 }
 
+// Post-order traversal
+function postOrderTraversal(root) {
+  if (root === null) {
+    return;
+  }
+  
+  postOrderTraversal(root.left);
+  postOrderTraversal(root.right);
+  console.log(root.value);
+}
+
+// Pre-order traversal
+function preOrderTraversal(root) {
+  if (root === null) {
+    return;
+  }
+  
+  console.log(root.value);
+  preOrderTraversal(root.left);
+  preOrderTraversal(root.right);
+}
+
+// In-order traversal
+function inOrderTraversal(root) {
+  if (root === null) {
+    return;
+  }
+  
+  inOrderTraversal(root.left);
+  console.log(root.value);
+  inOrderTraversal(root.right);
+}
+
 // Example usage
 let tree = null;
 tree = insertNode(tree, 5);
@@ -73,3 +105,12 @@ console.log("Closest value to -2:", findClosestValue(tree, -2));
 console.log("Closest value to 6:", findClosestValue(tree, 6));
 
 console.log("Is the tree a binary search tree?", isBinarySearchTree(tree));
+
+console.log("Post-order traversal:");
+postOrderTraversal(tree);
+
+console.log("Pre-order traversal:");
+preOrderTraversal(tree);
+
+console.log("In-order traversal:");
+inOrderTraversal(tree);

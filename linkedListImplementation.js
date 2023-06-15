@@ -6,6 +6,10 @@ function createTreeNode(value) {
   };
 }
 
+//sorted linked list, value:1,3,4,5 function to accept a value, 
+// check if value is in linked list or not, 
+// if present present, print value
+
 function addChild(parentNode, childNode) {
   if (parentNode.children === null) {
     parentNode.children = childNode;
